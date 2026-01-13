@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import pickle
-from tensorflow.keras.models import load_model
+from keras.models import load_model
 import matplotlib.pyplot as plt
 
 # Load model & scaler
@@ -52,3 +52,4 @@ if uploaded_file:
         plt.plot(range(100, 100+days), predictions, marker='o', label="Prediction")
         plt.legend()
         st.pyplot(plt)
+
