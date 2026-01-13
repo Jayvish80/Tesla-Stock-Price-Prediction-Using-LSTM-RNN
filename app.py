@@ -5,6 +5,11 @@ import pickle
 from keras.models import load_model
 import matplotlib.pyplot as plt
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+
+
 # Load model & scaler
 model = load_model("tesla_lstm_model.h5")
 with open("scaler.pkl", "rb") as f:
@@ -52,4 +57,5 @@ if uploaded_file:
         plt.plot(range(100, 100+days), predictions, marker='o', label="Prediction")
         plt.legend()
         st.pyplot(plt)
+
 
