@@ -49,4 +49,35 @@ Tesla-Stock-Price-Prediction-Using-LSTM-RNN/
 ├── app1.py
 ├── requirements.txt
 └── README.md
+```
+## 📉 Model Overview
+
+- Model Type: LSTM (Recurrent Neural Network)
+- Purpose: Learn temporal patterns in Tesla stock prices
+- Output: Predict future stock price trends based on past data
+- The trained model is saved as tesla_lstm_model.h5
+
+## 🖥️ Web Application
+The Streamlit app allows users to:
+- Visualize historical Tesla stock prices
+- View actual vs predicted values
+- Interact with the prediction model through a simple UI
+
+## 🔗 Live App:
+https://tesla-stock-price-prediction-using-lstm-rnn-gnbusjjppgnfjjfcfv.streamlit.app/
+
+## 📌 Results
+The model captures trends in Tesla stock prices and provides reasonable future price predictions based on historical data. 
+This project demonstrates the application of deep learning in financial time-series forecasting.
+
+## 🔮 Future Enhancements
+- Add technical indicators (RSI, MACD, Moving Averages)
+- Improve accuracy with GRU or Bidirectional LSTM
+- Enable multi-stock prediction
+- Add real-time stock data using APIs
+
+## 👤 Author
+
+Jayvish
+GitHub: https://github.com/Jayvish80
 
